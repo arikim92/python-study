@@ -15,7 +15,7 @@
 # 5. Tom 은 이미 비교했다.
 
 
-def find_overlap_name(x):
+def find_same_name(x):
 	result = set()  # set 으로하면 중복을 제거할 수 있다
 	for i in range(len(x)-1):  # len(x)-1 은 마지막 Tom을 비교하지 않는 5번에 해당됨
 		for j in range(i+1, len(x)):  # i+1 은 뒤로 갈 수록 서로 비교한 값들(중복) 제하기 위한 작업
@@ -25,5 +25,5 @@ def find_overlap_name(x):
 			# print(x[ i ], x[ j ])
 	print("result", result)
 
-names = [ 'Tom', 'Jerry', 'Mike', 'Tom' ]
-find_overlap_name(names)  # Tom
+name_list = [ 'Tom', 'Jerry', 'Mike', 'Tom' ]
+find_same_name(name_list)  # Tom
